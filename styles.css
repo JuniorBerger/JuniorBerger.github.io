@@ -1,0 +1,126 @@
+/* Site branding — Gaëtan Junior Abagha Abessolo */
+:root{
+  --fond:#0c1f17; --fond-2:#10271d; --or:#c9a227; --or-clair:#e8cf7a;
+  --creme:#f5f0e4; --blanc:#ffffff; --texte:#e9e4d6; --gris:#9aa39c;
+  --bord:rgba(201,162,39,.22); --ombre:0 18px 45px rgba(0,0,0,.35);
+  --rayon:14px; --font-titre:'Playfair Display',Georgia,serif; --font-texte:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-texte);color:var(--texte);background:var(--fond);line-height:1.65;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,92%);margin:0 auto}
+h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
+.section{padding:90px 0}
+.section--alt{background:var(--fond-2)}
+.kicker{display:inline-block;text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;color:var(--or);font-weight:700;margin-bottom:12px}
+.titre-section{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:14px}
+.sous-titre{color:var(--gris);max-width:640px;margin-bottom:44px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:999px;font-weight:600;border:none;cursor:pointer;transition:.25s;font-size:.95rem}
+.btn--or{background:var(--or);color:#141414}
+.btn--or:hover{background:var(--or-clair);transform:translateY(-2px)}
+.btn--ghost-light{border:1.5px solid rgba(255,255,255,.4);color:#fff;background:transparent}
+.btn--ghost-light:hover{border-color:var(--or);color:var(--or-clair)}
+.centre{text-align:center;margin-top:44px}
+
+/* Header */
+.header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;padding:18px 0}
+.header .container{display:flex;align-items:center;justify-content:space-between}
+.header--scrolled{background:rgba(12,31,23,.94);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.4);padding:12px 0}
+.logo{font-family:var(--font-titre);font-size:1.6rem;color:#fff}
+.logo span{color:var(--or)}
+.nav{display:flex;gap:34px;align-items:center}
+.nav a{color:#fff;font-weight:500;font-size:.95rem;position:relative;opacity:.9}
+.nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--or);transition:.25s}
+.nav a:hover::after{width:100%}
+.header-cta{display:flex;gap:12px;align-items:center}
+.burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+.burger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.3s}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 80% 20%,rgba(201,162,39,.12),transparent)}
+.hero-grille{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);margin-bottom:10px}
+.hero-titre{color:var(--or);font-weight:600;font-size:1.25rem;letter-spacing:.04em;margin-bottom:14px}
+.hero-promesse{font-family:var(--font-titre);font-style:italic;font-size:1.3rem;color:var(--or-clair);margin-bottom:20px}
+.hero-desc{color:var(--gris);max-width:560px;margin-bottom:32px}
+.hero-desc strong{color:var(--texte)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap}
+.hero-badges span{font-size:.82rem;border:1px solid var(--bord);border-radius:999px;padding:7px 16px;color:var(--gris)}
+.hero-photo img{border-radius:20px;box-shadow:var(--ombre);border:1px solid var(--bord);aspect-ratio:4/5;object-fit:cover;width:100%}
+
+/* Timeline */
+.timeline{position:relative;max-width:760px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--bord)}
+.etape{position:relative;padding:0 0 36px 44px}
+.etape::before{content:"";position:absolute;left:2px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--or)}
+.etape-date{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--or);margin-bottom:6px}
+.etape h3{font-size:1.2rem;margin-bottom:8px}
+.etape p{color:var(--gris);font-size:.95rem;max-width:640px}
+
+/* Services */
+.grille-services{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.service{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:34px 26px;transition:.3s}
+.service:hover{transform:translateY(-4px);border-color:var(--or);box-shadow:var(--ombre)}
+.service-icone{width:56px;height:56px;border-radius:16px;background:rgba(201,162,39,.14);color:var(--or-clair);
+  display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:700;margin-bottom:18px}
+.service h3{font-size:1.12rem;margin-bottom:10px}
+.service p{font-size:.9rem;color:var(--gris)}
+
+/* Réalisations */
+.grille-reas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rea{display:block;background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:30px 26px;transition:.3s}
+.rea:hover{transform:translateY(-4px);border-color:var(--or);box-shadow:var(--ombre)}
+.rea h3{font-size:1.15rem;margin-bottom:10px}
+.rea p{font-size:.9rem;color:var(--gris);margin-bottom:16px}
+.rea-tag{display:inline-block;font-size:.75rem;font-weight:600;color:var(--or);border:1px solid var(--bord);border-radius:999px;padding:5px 14px}
+
+/* Contact */
+.contact-grille{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.formulaire label{display:block;font-size:.85rem;font-weight:600;margin:14px 0 6px;color:var(--texte)}
+.formulaire input,.formulaire select,.formulaire textarea{width:100%;padding:13px 15px;border:1.5px solid var(--bord);
+  border-radius:10px;font-size:.95rem;font-family:var(--font-texte);outline:none;transition:.2s;background:rgba(255,255,255,.05);color:var(--texte)}
+.formulaire select option{color:#141414}
+.formulaire input:focus,.formulaire select:focus,.formulaire textarea:focus{border-color:var(--or)}
+.formulaire textarea{min-height:120px;resize:vertical}
+.form-ok{display:none;background:rgba(46,125,50,.18);border:1px solid #4caf50;color:#a5d6a7;border-radius:10px;padding:16px;margin-top:16px}
+.coordonnees{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:36px}
+.coordonnees h3{margin-bottom:18px}
+.coordonnees p{margin-bottom:12px;color:var(--gris)}
+.coordonnees a{color:var(--or-clair)}
+.coordonnees a:hover{color:var(--or)}
+
+/* Footer */
+footer{border-top:1px solid var(--bord);padding:10px 0 26px}
+.footer-bas{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.85rem;color:var(--gris);padding-top:22px}
+
+/* Divers */
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:.25s}
+.whatsapp-float:hover{transform:scale(1.1)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:none}
+
+@media(max-width:1024px){
+  .grille-services{grid-template-columns:repeat(2,1fr)}
+  .grille-reas{grid-template-columns:repeat(2,1fr)}
+  .hero-grille{grid-template-columns:1fr;gap:44px}
+  .hero-photo{max-width:420px}
+  .contact-grille{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav{position:fixed;inset:0 0 0 auto;width:min(320px,84vw);background:var(--fond-2);flex-direction:column;
+    align-items:flex-start;padding:100px 36px;gap:26px;transform:translateX(100%);transition:.35s;border-left:1px solid var(--bord)}
+  .nav.ouvert{transform:none}
+  .nav a{font-size:1.1rem}
+  .burger{display:flex;z-index:60}
+  .burger.ouvert span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  .burger.ouvert span:nth-child(2){opacity:0}
+  .burger.ouvert span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+  .header-cta .btn{display:none}
+  .grille-services,.grille-reas{grid-template-columns:1fr}
+  .section{padding:64px 0}
+}
