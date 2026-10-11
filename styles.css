@@ -71,6 +71,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .grille-services{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .service{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:34px 26px;transition:.3s}
 .service:hover{transform:translateY(-4px);border-color:var(--or);box-shadow:var(--ombre)}
+.service-img{display:block;width:calc(100% + 52px);max-width:none;aspect-ratio:16/10;object-fit:cover;border-radius:var(--rayon) var(--rayon) 0 0;margin:-34px -26px 20px}
 .service-icone{width:56px;height:56px;border-radius:16px;background:rgba(201,162,39,.14);color:var(--or-clair);
   display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:700;margin-bottom:18px}
 .service h3{font-size:1.12rem;margin-bottom:10px}
