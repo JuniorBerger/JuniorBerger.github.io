@@ -140,4 +140,4 @@ footer{border-top:1px solid var(--bord);padding:10px 0 26px}
 /* Grain papier subtil sur tout le site (texture assombrie, voile léger) */
 body::after{content:"";position:fixed;inset:0;z-index:2000;pointer-events:none;
   background:url('images/texture-fond.webp') center/cover no-repeat;
-  opacity:.10;mix-blend-mode:soft-light}
+  opacity:.18}
