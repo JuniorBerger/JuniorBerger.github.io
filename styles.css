@@ -4,7 +4,7 @@
   --bleu:#4C63E8; --bleu-clair:#9AA8FF; --bleu-doux:rgba(76,99,232,.14); --bleu-bord:rgba(76,99,232,.38);
   --creme:#F5F0E4; --blanc:#ffffff; --texte:#EDEDE8; --gris:#A6A6A0;
   --bord:rgba(245,197,24,.22); --ombre:0 18px 45px rgba(0,0,0,.45);
-  --rayon:14px; --font-titre:'Playfair Display',Georgia,serif; --font-texte:'Inter',system-ui,sans-serif;
+  --rayon:14px; --font-titre:'Recoleta',Georgia,serif; --font-texte:'Inter',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
