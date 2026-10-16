@@ -95,6 +95,8 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .formulaire input:focus,.formulaire select:focus,.formulaire textarea:focus{border-color:var(--bleu)}
 .formulaire textarea{min-height:120px;resize:vertical}
 .form-ok{display:none;background:rgba(46,125,50,.18);border:1px solid #4caf50;color:#a5d6a7;border-radius:10px;padding:16px;margin-top:16px}
+.form-erreur{display:none;background:rgba(198,40,40,.15);border:1px solid #e57373;color:#ef9a9a;border-radius:10px;padding:16px;margin-top:16px}
+.grille-3{grid-template-columns:repeat(3,1fr)}
 .coordonnees{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:36px}
 .coordonnees h3{margin-bottom:18px}
 .coordonnees p{margin-bottom:12px;color:var(--gris)}
@@ -114,6 +116,7 @@ footer{border-top:1px solid var(--bord);padding:10px 0 26px}
 
 @media(max-width:1024px){
   .grille-services{grid-template-columns:repeat(2,1fr)}
+  .grille-services.grille-3{grid-template-columns:1fr}
   .grille-reas{grid-template-columns:repeat(2,1fr)}
   .hero-grille{grid-template-columns:1fr;gap:44px}
   .hero-photo{max-width:420px}
