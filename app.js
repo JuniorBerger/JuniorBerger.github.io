@@ -22,13 +22,29 @@ function initReveals(){
   document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 }
 function initFormulaires(){
-  document.querySelectorAll("form[data-demo]").forEach(f => {
-    f.addEventListener("submit", e => {
-      e.preventDefault();
-      f.querySelector(".form-ok").style.display = "block";
-      f.querySelectorAll("input[type=text],input[type=email],textarea").forEach(i => i.value = "");
-      f.scrollIntoView({behavior:"smooth", block:"center"});
-    });
+  const f = document.getElementById("form-contact");
+  if(!f) return;
+  f.addEventListener("submit", e => {
+    e.preventDefault();
+    const btn = f.querySelector('button[type="submit"]');
+    const ok = f.querySelector(".form-ok"), ko = f.querySelector(".form-erreur");
+    btn.disabled = true; const label = btn.textContent; btn.textContent = "Envoi…";
+    const data = {
+      nom: document.getElementById("c-nom").value.trim(),
+      email: document.getElementById("c-email").value.trim(),
+      besoin: document.getElementById("c-besoin").value,
+      message: document.getElementById("c-msg").value.trim(),
+      _subject: "Nouveau message — juniorberger.github.io",
+      _honey: "", _captcha: "false"
+    };
+    fetch(f.action, {method:"POST",
+      headers:{"Content-Type":"application/json","Accept":"application/json"},
+      body: JSON.stringify(data)})
+      .then(r => { if(!r.ok) throw new Error("http "+r.status); return r.json(); })
+      .then(() => { ok.style.display = "block"; ko.style.display = "none"; f.reset();
+        f.scrollIntoView({behavior:"smooth", block:"center"}); })
+      .catch(() => { ko.style.display = "block"; ok.style.display = "none"; })
+      .finally(() => { btn.disabled = false; btn.textContent = label; });
   });
 }
 function initDivers(){
