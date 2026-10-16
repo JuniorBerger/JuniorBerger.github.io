@@ -206,7 +206,7 @@
   <div class="container">
     <span class="kicker reveal">Ma méthode</span>
     <h2 class="titre-section reveal">Simple, directe, sans jargon</h2>
-    <div class="grille-services" style="grid-template-columns:repeat(3,1fr)">
+    <div class="grille-services grille-3">
       <div class="service reveal">
         <div class="service-icone">1</div>
         <h3>Diagnostic</h3>
@@ -232,13 +232,14 @@
     <h2 class="titre-section reveal">Discutons de votre projet</h2>
     <p class="sous-titre reveal">Premier échange sans engagement : dites-moi où vous en êtes, je vous dis ce que je peux faire.</p>
     <div class="contact-grille">
-      <form class="formulaire reveal" data-demo>
+      <form class="formulaire reveal" id="form-contact" action="https://formsubmit.co/ajax/abaghaabessolo@gmail.com" method="POST">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <label for="c-nom">Votre nom *</label>
-        <input id="c-nom" type="text" required placeholder="Votre nom">
+        <input id="c-nom" name="nom" type="text" required placeholder="Votre nom">
         <label for="c-email">E-mail *</label>
-        <input id="c-email" type="email" required placeholder="vous@exemple.com">
+        <input id="c-email" name="email" type="email" required placeholder="vous@exemple.com">
         <label for="c-besoin">Votre besoin</label>
-        <select id="c-besoin">
+        <select id="c-besoin" name="besoin">
           <option>Un site vitrine</option>
           <option>Référencement / Fiche Google</option>
           <option>Contenu &amp; réseaux sociaux</option>
@@ -246,9 +247,10 @@
           <option>Autre projet</option>
         </select>
         <label for="c-msg">Votre message *</label>
-        <textarea id="c-msg" required placeholder="Décrivez votre projet en quelques lignes…"></textarea>
+        <textarea id="c-msg" name="message" required placeholder="Décrivez votre projet en quelques lignes…"></textarea>
         <button class="btn btn--or" type="submit" style="margin-top:20px">Envoyer</button>
         <p class="form-ok">✓ Message envoyé ! Je vous réponds sous 24 h ouvrées.</p>
+        <p class="form-erreur">✕ L'envoi a échoué. Écrivez-moi directement sur <a href="https://wa.me/24177915531" target="_blank" rel="noopener" style="color:var(--or-clair);text-decoration:underline">WhatsApp</a>.</p>
       </form>
       <div class="reveal">
         <div class="coordonnees">
