@@ -1,8 +1,9 @@
 /* Site branding — Gaëtan Junior Abagha Abessolo */
 :root{
-  --fond:#0c1f17; --fond-2:#10271d; --or:#c9a227; --or-clair:#e8cf7a;
-  --creme:#f5f0e4; --blanc:#ffffff; --texte:#e9e4d6; --gris:#9aa39c;
-  --bord:rgba(201,162,39,.22); --ombre:0 18px 45px rgba(0,0,0,.35);
+  --fond:#0D0D0D; --fond-2:#141414; --or:#F5C518; --or-clair:#FFD94D;
+  --bleu:#4C63E8; --bleu-clair:#9AA8FF; --bleu-doux:rgba(76,99,232,.14); --bleu-bord:rgba(76,99,232,.38);
+  --creme:#F5F0E4; --blanc:#ffffff; --texte:#EDEDE8; --gris:#A6A6A0;
+  --bord:rgba(245,197,24,.22); --ombre:0 18px 45px rgba(0,0,0,.45);
   --rayon:14px; --font-titre:'Playfair Display',Georgia,serif; --font-texte:'Inter',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -27,7 +28,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 /* Header */
 .header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;padding:18px 0}
 .header .container{display:flex;align-items:center;justify-content:space-between}
-.header--scrolled{background:rgba(12,31,23,.94);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.4);padding:12px 0}
+.header--scrolled{background:rgba(13,13,13,.94);backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.4);padding:12px 0}
 .logo{font-family:var(--font-titre);font-size:1.6rem;color:#fff}
 .logo span{color:var(--or)}
 .nav{display:flex;gap:34px;align-items:center}
@@ -40,7 +41,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 
 /* Hero */
 .hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 70px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 80% 20%,rgba(201,162,39,.12),transparent)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 80% 20%,rgba(245,197,24,.10),transparent),radial-gradient(700px 380px at 8% 88%,rgba(76,99,232,.12),transparent)}
 .hero-grille{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;position:relative}
 .hero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);margin-bottom:10px}
 .hero-titre{color:var(--or);font-weight:600;font-size:1.25rem;letter-spacing:.04em;margin-bottom:14px}
@@ -49,7 +50,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .hero-desc strong{color:var(--texte)}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
 .hero-badges{display:flex;gap:10px;flex-wrap:wrap}
-.hero-badges span{font-size:.82rem;border:1px solid var(--bord);border-radius:999px;padding:7px 16px;color:var(--gris)}
+.hero-badges span{font-size:.82rem;border:1px solid var(--bleu-bord);border-radius:999px;padding:7px 16px;color:var(--gris)}
 .hero-photo img{border-radius:20px;box-shadow:var(--ombre);border:1px solid var(--bord);aspect-ratio:4/5;object-fit:cover;width:100%}
 
 /* Timeline */
@@ -72,7 +73,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .service{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:34px 26px;transition:.3s}
 .service:hover{transform:translateY(-4px);border-color:var(--or);box-shadow:var(--ombre)}
 .service-img{display:block;width:calc(100% + 52px);max-width:none;aspect-ratio:16/10;object-fit:cover;border-radius:var(--rayon) var(--rayon) 0 0;margin:-34px -26px 20px}
-.service-icone{width:56px;height:56px;border-radius:16px;background:rgba(201,162,39,.14);color:var(--or-clair);
+.service-icone{width:56px;height:56px;border-radius:16px;background:var(--bleu-doux);color:var(--or-clair);
   display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:700;margin-bottom:18px}
 .service h3{font-size:1.12rem;margin-bottom:10px}
 .service p{font-size:.9rem;color:var(--gris)}
@@ -83,7 +84,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .rea:hover{transform:translateY(-4px);border-color:var(--or);box-shadow:var(--ombre)}
 .rea h3{font-size:1.15rem;margin-bottom:10px}
 .rea p{font-size:.9rem;color:var(--gris);margin-bottom:16px}
-.rea-tag{display:inline-block;font-size:.75rem;font-weight:600;color:var(--or);border:1px solid var(--bord);border-radius:999px;padding:5px 14px}
+.rea-tag{display:inline-block;font-size:.75rem;font-weight:600;color:var(--bleu-clair);border:1px solid var(--bleu-bord);border-radius:999px;padding:5px 14px}
 
 /* Contact */
 .contact-grille{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
@@ -91,7 +92,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .formulaire input,.formulaire select,.formulaire textarea{width:100%;padding:13px 15px;border:1.5px solid var(--bord);
   border-radius:10px;font-size:.95rem;font-family:var(--font-texte);outline:none;transition:.2s;background:rgba(255,255,255,.05);color:var(--texte)}
 .formulaire select option{color:#141414}
-.formulaire input:focus,.formulaire select:focus,.formulaire textarea:focus{border-color:var(--or)}
+.formulaire input:focus,.formulaire select:focus,.formulaire textarea:focus{border-color:var(--bleu)}
 .formulaire textarea{min-height:120px;resize:vertical}
 .form-ok{display:none;background:rgba(46,125,50,.18);border:1px solid #4caf50;color:#a5d6a7;border-radius:10px;padding:16px;margin-top:16px}
 .coordonnees{background:rgba(255,255,255,.03);border:1px solid var(--bord);border-radius:var(--rayon);padding:36px}
@@ -133,3 +134,5 @@ footer{border-top:1px solid var(--bord);padding:10px 0 26px}
   .etape-logo--ecole,.etape-logo--amja{width:200px}
   .etape-logo--studia{height:110px}
 }
+
+::selection{background:var(--or);color:#141414}
