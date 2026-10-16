@@ -12,12 +12,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--or);outline-offset:
 body{font-family:var(--font-texte);color:var(--texte);background:var(--fond);line-height:1.65;font-size:16px}
 img{max-width:100%;display:block}
 body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
-  background:url('images/texture-fond.webp') center/cover no-repeat;opacity:.5}
+  background:url('images/texture-fond.webp') center/cover no-repeat;opacity:.65}
 a{color:inherit;text-decoration:none}
 .container{width:min(1180px,92%);margin:0 auto}
 h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
-.section{padding:90px 0;position:relative;z-index:1;background:rgba(13,13,13,.84)}
-.section--alt{background:rgba(20,20,20,.84)}
+.section{padding:90px 0;position:relative;z-index:1;background:rgba(13,13,13,.58)}
+.section--alt{background:rgba(20,20,20,.58)}
 .kicker{display:inline-block;text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;color:var(--or);font-weight:700;margin-bottom:12px}
 .titre-section{font-size:clamp(1.7rem,3.4vw,2.6rem);margin-bottom:14px}
 .sous-titre{color:var(--gris);max-width:640px;margin-bottom:44px}
@@ -107,7 +107,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .coordonnees a:hover{color:var(--or)}
 
 /* Footer */
-footer{border-top:1px solid var(--bord);padding:10px 0 26px;position:relative;z-index:1;background:rgba(13,13,13,.84)}
+footer{border-top:1px solid var(--bord);padding:10px 0 26px;position:relative;z-index:1;background:rgba(13,13,13,.58)}
 .footer-bas{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.85rem;color:var(--gris);padding-top:22px}
 
 /* Divers */
