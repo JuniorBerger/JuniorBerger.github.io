@@ -3,291 +3,187 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Votre site vitrine — Gaëtan Junior Abagha Abessolo, marketeur digital freelance</title>
-<meta name="description" content="Un site vitrine qui transforme vos visiteurs en clients. Maquette gratuite et sans engagement. Landing page 120 000 FCFA, site vitrine de 100 000 à 330 000 FCFA.">
+<title>Mami Watta — Kayaman du Bled | Le single en téléchargement direct</title>
+<meta name="description" content="« Mami Watta », le nouveau single de Kayaman du Bled, en téléchargement direct sur sa boutique officielle, le Shop du Bled. 583 FCFA. Chaque achat soutient directement l'artiste.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://juniorberger.github.io/site-vitrine/">
-<meta property="og:title" content="Votre site vitrine — maquette gratuite">
-<meta property="og:description" content="Vos clients vous cherchent sur Google. Donnez-leur un site à la hauteur de votre entreprise. Maquette gratuite, sans engagement.">
+<meta property="og:title" content="Mami Watta — Kayaman du Bled">
+<meta property="og:description" content="Le nouveau single en téléchargement direct. Chaque achat soutient directement l'artiste — pas d'intermédiaire.">
+<meta property="og:image" content="https://juniorberger.github.io/images/mami-watta-cover.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Recoleta:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--fond:#0D0D0D;--fond-2:#141414;--or:#F5C518;--or-clair:#FFD94D;--sarcelle:#12B5A5;--violet:#A24CF5;--creme:#F5F0E4;--texte:#EDEDE8;--gris:#A6A6A0;--bord:rgba(245,197,24,.22);--rayon:14px;--font-titre:'Recoleta',Georgia,serif;--font-texte:'Inter',system-ui,sans-serif;--font-dyn:'Bricolage Grotesque',var(--font-texte)}
-.dyn{font-family:var(--font-dyn);font-weight:800;letter-spacing:0}
-.kicker--sarcelle{color:var(--sarcelle)}
-.kicker--violet{color:var(--violet)}
-.hero-img{max-width:820px;width:100%;margin:44px auto 0;border-radius:18px;box-shadow:0 0 0 3px var(--or),14px 14px 0 rgba(162,76,245,.55),-14px -14px 0 rgba(18,181,165,.35)}
-.galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.galerie figure{background:var(--fond-2);border:1px solid var(--bord);border-radius:var(--rayon);overflow:hidden}
-.section--alt .galerie figure{background:var(--fond)}
-.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.galerie figcaption{padding:16px 18px;color:var(--gris);font-size:.95rem}
-.galerie figcaption strong{color:var(--texte);display:block;margin-bottom:4px}
+:root{--fond:#160B04;--fond-2:#221106;--orange:#E8641B;--or:#F7B500;--or-clair:#FFC933;--creme:#FFF3E0;--texte:#F7E9D2;--gris:#C9A97E;--bord:rgba(247,181,0,.25);--rayon:16px;--font-titre:'Bricolage Grotesque',system-ui,sans-serif;--font-texte:'Inter',system-ui,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:var(--font-texte);color:var(--texte);background:var(--fond);line-height:1.65;font-size:16px}
-.container{max-width:1080px;margin:0 auto;padding:0 22px}
-h1,h2{font-family:var(--font-titre);line-height:1.15}
-.kicker{display:inline-block;color:var(--or);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px}
-.btn{display:inline-block;background:var(--or);color:#111;font-weight:700;padding:15px 30px;border-radius:999px;text-decoration:none;font-size:1.02rem;border:2px solid var(--or);transition:.2s}
+.container{max-width:1020px;margin:0 auto;padding:0 22px}
+h1,h2{font-family:var(--font-titre);line-height:1.08}
+.kicker{display:inline-block;color:var(--or);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;margin-bottom:14px}
+.kicker--orange{color:var(--orange)}
+.btn{display:inline-block;background:var(--or);color:#221106;font-weight:800;padding:16px 34px;border-radius:999px;text-decoration:none;font-size:1.06rem;border:2px solid var(--or);transition:.2s;font-family:var(--font-titre)}
 .btn:hover{background:var(--or-clair);border-color:var(--or-clair)}
 .btn--vide{background:transparent;color:var(--or)}
-.btn--vide:hover{background:rgba(245,197,24,.1);color:var(--or-clair)}
-header{padding:20px 0;border-bottom:1px solid var(--bord)}
+.btn--vide:hover{background:rgba(247,181,0,.12);color:var(--or-clair)}
+header{padding:18px 0;border-bottom:1px solid var(--bord)}
 header .container{display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:var(--font-titre);font-size:1.5rem;color:var(--texte);text-decoration:none}
-.logo span{color:var(--or)}
-.hero{padding:84px 0 64px;text-align:center}
-.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin:0 auto 20px;max-width:880px;overflow-wrap:break-word}
-.hero h1 em{color:var(--or);font-style:italic;font-family:var(--font-dyn);font-weight:800;font-size:.92em;text-shadow:2px 2px 0 rgba(162,76,245,.45)}
-.hero p{color:var(--gris);font-size:1.13rem;max-width:720px;margin:0 auto 34px}
+.logo{font-family:var(--font-titre);font-weight:800;font-size:1.25rem;color:var(--texte);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--orange)}
+.hero{padding:64px 0 56px;text-align:center;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(232,100,27,.28),transparent 70%)}
+.hero .pochette{width:min(400px,84vw);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 0 3px rgba(247,181,0,.35);margin:0 auto 30px}
+.hero h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.01em;margin-bottom:6px}
+.hero .artiste{font-family:var(--font-titre);font-size:clamp(1.15rem,3vw,1.5rem);font-weight:700;color:var(--creme);margin-bottom:18px}
+.hero p{color:var(--gris);font-size:1.1rem;max-width:660px;margin:0 auto 28px}
+.prix-hero{font-family:var(--font-titre);font-size:1.7rem;font-weight:800;color:var(--creme);margin-bottom:20px}
+.prix-hero small{display:block;font-family:var(--font-texte);font-weight:500;font-size:.9rem;color:var(--gris)}
 .cta-ligne{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .micro{margin-top:16px;font-size:.9rem;color:var(--gris)}
-section{padding:64px 0}
+section{padding:60px 0}
 .section--alt{background:var(--fond-2)}
-h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin-bottom:14px}
-.sous{color:var(--gris);max-width:680px;margin-bottom:36px}
+h2{font-size:clamp(1.6rem,3.8vw,2.3rem);margin-bottom:14px;color:var(--creme)}
+.sous{color:var(--gris);max-width:660px;margin-bottom:34px}
+.lecteur{background:var(--fond);border:1px solid var(--bord);border-radius:var(--rayon);padding:26px;max-width:640px}
+.section--alt .lecteur{background:var(--fond)}
+.lecteur audio{width:100%;margin-top:10px}
 .grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
 .carte{background:var(--fond-2);border:1px solid var(--bord);border-radius:var(--rayon);padding:26px}
 .section--alt .carte{background:var(--fond)}
-.carte h3{font-size:1.12rem;margin-bottom:8px}
+.carte h3{font-size:1.1rem;margin-bottom:8px;color:var(--creme)}
 .carte p{color:var(--gris);font-size:.96rem}
-.carte a{color:var(--or);font-weight:600;text-decoration:none}
-.prix{font-family:var(--font-titre);font-size:1.55rem;color:var(--or);margin:10px 0 4px}
-.prix-note{font-size:.85rem;color:var(--gris)}
-.carte ul{list-style:none;margin-top:14px}
-.carte ul li{padding:5px 0 5px 22px;position:relative;font-size:.95rem;color:var(--texte)}
-.carte ul li::before{content:"✓";position:absolute;left:0;color:var(--or);font-weight:700}
-.carte--vedette{border-color:var(--or);box-shadow:0 18px 45px rgba(0,0,0,.45)}
-.etiquette{display:inline-block;background:var(--or);color:#111;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:4px 10px;border-radius:999px;margin-bottom:12px}
-.etapes{counter-reset:etape;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.etapes{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
 .etape{background:var(--fond-2);border:1px solid var(--bord);border-radius:var(--rayon);padding:24px}
 .section--alt .etape{background:var(--fond)}
-.etape .num{font-family:var(--font-titre);font-size:2rem;color:var(--or);display:block;margin-bottom:8px}
-.etape h3{font-size:1.05rem;margin-bottom:6px}
+.etape .num{font-family:var(--font-titre);font-size:2rem;font-weight:800;color:var(--orange);display:block;margin-bottom:8px}
+.etape h3{font-size:1.05rem;margin-bottom:6px;color:var(--creme)}
 .etape p{color:var(--gris);font-size:.94rem}
-.faq details{border:1px solid var(--bord);border-radius:var(--rayon);padding:16px 20px;margin-bottom:12px;background:var(--fond-2)}
-.faq summary{font-weight:600;cursor:pointer}
-.faq details p{color:var(--gris);margin-top:8px;font-size:.96rem}
-form{max-width:640px}
-.champ{margin-bottom:16px}
-label{display:block;font-weight:600;margin-bottom:6px;font-size:.95rem}
-input,select,textarea{width:100%;background:var(--fond);border:1px solid var(--bord);border-radius:10px;color:var(--texte);padding:12px 14px;font-family:var(--font-texte);font-size:1rem}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--or);outline-offset:1px}
+.artiste-bloc{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:34px;align-items:center}
+.artiste-bloc img{width:100%;border-radius:var(--rayon);box-shadow:0 18px 45px rgba(0,0,0,.5)}
+.artiste-bloc p{color:var(--gris);margin-bottom:14px}
+.artiste-bloc p strong{color:var(--texte)}
+.galerie{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.galerie figure{border:1px solid var(--bord);border-radius:var(--rayon);overflow:hidden;background:var(--fond-2)}
+.section--alt .galerie figure{background:var(--fond)}
+.galerie img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.galerie figcaption{padding:14px 18px;color:var(--gris);font-size:.94rem}
+.bandeau-achat{text-align:center}
+.bandeau-achat .prix{font-family:var(--font-titre);font-size:2rem;font-weight:800;color:var(--or);margin-bottom:8px}
 footer{border-top:1px solid var(--bord);padding:30px 0;color:var(--gris);font-size:.9rem;text-align:center}
 footer a{color:var(--or);text-decoration:none}
-@media(max-width:640px){.hero{padding:56px 0 44px}section{padding:46px 0}}
+@media(max-width:720px){.artiste-bloc{grid-template-columns:1fr}.hero{padding:44px 0 40px}section{padding:44px 0}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="container">
-    <a class="logo" href="https://juniorberger.github.io/">GA<span>.</span></a>
-    <a class="btn btn--vide" href="#commande" style="padding:9px 20px;font-size:.92rem">Ma maquette gratuite</a>
+    <a class="logo" href="#top">SHOP <span>DU BLED</span></a>
+    <a class="btn btn--vide" href="https://ikwyybfr.mychariow.online/prd_e8etl2qk" style="padding:9px 20px;font-size:.92rem">Acheter le single</a>
   </div>
 </header>
 
-<div class="hero">
+<div class="hero" id="top">
   <div class="container">
-    <span class="kicker">Sites vitrines — Gabon &amp; Afrique francophone</span>
-    <h1>Vos clients vous cherchent sur Google.<br><em>Donnez-leur un site à la hauteur de votre entreprise.</em></h1>
-    <p>Aujourd'hui, quand on tape le nom de votre établissement, on trouve des annuaires, une page Facebook — mais aucun site à vous. Je construis des sites vitrines rapides et élégants, pensés pour transformer ces recherches en appels, en réservations et en demandes de devis.</p>
+    <span class="kicker">Nouveau single — Kayaman du Bled</span>
+    <img class="pochette" src="../images/mami-watta-cover.jpg" alt="Pochette du single Mami Watta de Kayaman du Bled">
+    <h1>Mami Watta</h1>
+    <p class="artiste">Kayaman du Bled</p>
+    <p>« Mami Watta », le nouveau single de Kayaman du Bled, en téléchargement direct sur sa boutique officielle, le Shop du Bled. Chaque achat soutient directement l'artiste — pas d'intermédiaire : ton soutien finance la prochaine musique.</p>
+    <div class="prix-hero">583 FCFA<small>Téléchargement immédiat après paiement — le titre complet, en MP3</small></div>
     <div class="cta-ligne">
-      <a class="btn" href="#commande">Demander ma maquette gratuite</a>
-      <a class="btn btn--vide" href="https://wa.me/24177915531?text=Bonjour%20Ga%C3%ABtan%2C%20je%20veux%20un%20site%20vitrine%20pour%20mon%20entreprise.%20Pouvez-vous%20me%20pr%C3%A9parer%20la%20maquette%20gratuite%20%3F" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+      <a class="btn" href="https://ikwyybfr.mychariow.online/prd_e8etl2qk">Acheter le single</a>
+      <a class="btn btn--vide" href="#ecouter">Écouter l'aperçu</a>
     </div>
-    <p class="micro">Maquette de page d'accueil offerte, sans engagement. Si elle ne vous plaît pas, vous la gardez et on en reste là.</p>
-    <img class="hero-img" src="../images/tunnel-restauratrice.webp" alt="Une restauratrice de Libreville souriante découvrant le site de son restaurant sur son smartphone">
+    <p class="micro">Paiement sécurisé via Chariow : Mobile Money, carte bancaire et autres moyens proposés à la commande.</p>
   </div>
 </div>
 
-<section class="section--alt">
+<section class="section--alt" id="ecouter">
   <div class="container">
-    <span class="kicker">Preuves</span>
-    <h2>Des exemples concrets, par secteur</h2>
-    <p class="sous">Voici des maquettes que j'ai réalisées pour montrer à chaque secteur ce qu'un site vitrine change. Cliquez, regardez — puis imaginez le vôtre.</p>
-    <div class="grille">
-      <div class="carte" style="border-top:4px solid var(--or)">
-        <h3>Hôtellerie</h3>
-        <p>Un hôtel qui présente ses chambres et prend des réservations en direct, sans dépendre des plateformes.</p>
-        <p style="margin-top:10px"><a href="https://wehem-digital-agency.github.io/demo-manguiers-hotel/" target="_blank" rel="noopener">Voir la démo hôtel →</a></p>
-      </div>
-      <div class="carte" style="border-top:4px solid var(--sarcelle)">
-        <h3>Restauration</h3>
-        <p>Une carte qui donne faim, des photos qui ouvrent l'appétit, un bouton pour réserver en un geste.</p>
-        <p style="margin-top:10px"><a href="https://wehem-digital-agency.github.io/demo-palmier-or/" target="_blank" rel="noopener">Voir la démo restaurant →</a></p>
-      </div>
-      <div class="carte" style="border-top:4px solid var(--violet)">
-        <h3>Santé</h3>
-        <p>Une clinique qui rassure : spécialités, horaires, prise de rendez-vous claire dès la première page.</p>
-        <p style="margin-top:10px"><a href="https://wehem-digital-agency.github.io/demo-hibiscus-sante/" target="_blank" rel="noopener">Voir la démo santé →</a></p>
-      </div>
-      <div class="carte" style="border-top:4px solid var(--or)">
-        <h3>Immobilier</h3>
-        <p>Des biens présentés avec de belles photos, et des demandes qualifiées qui arrivent toutes seules.</p>
-        <p style="margin-top:10px"><a href="https://wehem-digital-agency.github.io/demo-ebene-immobilier/" target="_blank" rel="noopener">Voir la démo immobilier →</a></p>
-      </div>
+    <span class="kicker kicker--orange">Écoute</span>
+    <h2>L'aperçu — 60 secondes</h2>
+    <p class="sous">Un avant-goût du titre, en exclusivité ici. Le morceau complet dure 3 minutes 07 — il t'attend juste après l'achat.</p>
+    <div class="lecteur">
+      <strong style="color:var(--creme)">Mami Watta — aperçu (intro, 60 s)</strong>
+      <audio controls preload="metadata" src="apercu-60s.mp3">Ton navigateur ne peut pas lire cet aperçu audio.</audio>
+      <p class="micro" style="margin-top:10px">Après l'achat, le MP3 complet se télécharge tout de suite : à écouter partout, sans connexion.</p>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <span class="kicker kicker--violet">Satisfaction</span>
-    <h2>Le sourire du premier jour <span class="dyn" style="color:var(--or);font-style:italic">en ligne</span></h2>
-    <p class="sous">C'est ce moment-là que je livre : un patron qui tient enfin une adresse web à la hauteur de son établissement, et qui peut la montrer fièrement à ses clients.</p>
-    <div class="galerie">
-      <figure>
-        <img src="../images/tunnel-hotelier.webp" alt="Un hôtelier d'Abidjan souriant, tablette à la main, affichant le site de son hôtel" loading="lazy">
-        <figcaption><strong>L'hôtelier</strong>Il présente ses chambres et prend ses réservations en direct, sans dépendre des plateformes.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/tunnel-commercante.webp" alt="Une commerçante de Libreville joyeuse devant le nouveau site de sa boutique de beauté" loading="lazy">
-        <figcaption><strong>La commerçante</strong>Sa boutique a enfin son adresse : ses produits en ligne, ses clientes la trouvent sur Google.</figcaption>
-      </figure>
-      <figure>
-        <img src="../images/tunnel-restauratrice.webp" alt="Une restauratrice de Libreville regardant la carte de son restaurant sur son site mobile" loading="lazy">
-        <figcaption><strong>La restauratrice</strong>Sa carte du jour, ses prix, son bouton de réservation — tout tient dans la poche de ses clients.</figcaption>
-      </figure>
-    </div>
-    <p class="micro" style="margin-top:14px">Photos d'illustration — vos propres retours clients prendront leur place ici dès vos premières livraisons.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <span class="kicker kicker--sarcelle">Offres</span>
-    <h2>Des prix annoncés, sans surprise</h2>
-    <p class="sous">Le prix exact dépend de votre besoin — il est toujours confirmé noir sur blanc après un échange de 15 minutes, avant tout engagement.</p>
-    <div class="grille">
-      <div class="carte">
-        <h3>Page Unique</h3>
-        <div class="prix">120 000 FCFA</div>
-        <p class="prix-note">Paiement unique</p>
-        <ul>
-          <li>Une page complète qui présente votre activité</li>
-          <li>Bouton WhatsApp et formulaire de contact</li>
-          <li>Parfaite pour démarrer et être trouvé</li>
-        </ul>
-      </div>
-      <div class="carte carte--vedette">
-        <span class="etiquette">Le plus demandé</span>
-        <h3>Site Vitrine</h3>
-        <div class="prix">100 000 – 330 000 FCFA</div>
-        <p class="prix-note">Selon la complexité — prix ferme communiqué après l'échange</p>
-        <ul>
-          <li>Plusieurs pages : accueil, services, galerie, contact</li>
-          <li>Textes et photos pensés pour convaincre</li>
-          <li>Relié à votre fiche Google</li>
-          <li>Rapide, impeccable sur mobile</li>
-        </ul>
-      </div>
-      <div class="carte">
-        <h3>Vitrine + Visibilité</h3>
-        <div class="prix">Sur devis</div>
-        <p class="prix-note">Site + fiche Google optimisée (dès 50 000 FCFA)</p>
-        <ul>
-          <li>Le site vitrine complet</li>
-          <li>Fiche Google optimisée : audit, avis, référencement local</li>
-          <li>Un ensemble cohérent pour être trouvé partout</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section--alt">
-  <div class="container">
-    <span class="kicker kicker--violet">Déroulement</span>
-    <h2>Simple, en quatre temps</h2>
-    <p class="sous">Tout peut se faire à distance — au Gabon comme ailleurs en Afrique francophone.</p>
-    <div class="etapes">
-      <div class="etape"><span class="num">1</span><h3>L'échange</h3><p>Un appel ou une visio de 15 minutes pour comprendre votre activité et ce que vous attendez du site.</p></div>
-      <div class="etape"><span class="num">2</span><h3>La maquette gratuite</h3><p>Je prépare la page d'accueil de votre futur site. Vous jugez sur pièce, sans engagement.</p></div>
-      <div class="etape"><span class="num">3</span><h3>La construction</h3><p>Si la maquette vous plaît : devis ferme, acompte de 50 %, et je construis le site complet.</p></div>
-      <div class="etape"><span class="num">4</span><h3>La mise en ligne</h3><p>Solde à la livraison, site en ligne, relié à Google et à vos réseaux. Vos clients vous trouvent enfin.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container faq">
-    <span class="kicker">Questions fréquentes</span>
-    <h2>Ce qu'on me demande souvent</h2>
+    <span class="kicker">Le titre</span>
+    <h2>Ce que tu reçois</h2>
     <p class="sous"></p>
-    <details>
-      <summary>La maquette est vraiment gratuite ?</summary>
-      <p>Oui. C'est ma façon de travailler : vous voyez le résultat avant de décider quoi que ce soit. Si elle ne vous convient pas, vous la gardez et il n'y a rien à payer.</p>
-    </details>
-    <details>
-      <summary>Pourquoi une fourchette pour le site vitrine ?</summary>
-      <p>Parce qu'un salon de coiffure et un hôtel avec galeries et réservations ne demandent pas le même travail. Après l'échange de 15 minutes, je vous donne un prix ferme, dans cette fourchette — jamais de surprise ensuite.</p>
-    </details>
-    <details>
-      <summary>Quels sont les délais ?</summary>
-      <p>Le délai exact est annoncé noir sur blanc dans le devis, avant de commencer — je ne promets jamais une date que je ne peux pas tenir.</p>
-    </details>
-    <details>
-      <summary>Je ne suis pas au Gabon, c'est possible ?</summary>
-      <p>Oui, tout se fait à distance : appel ou visio pour cadrer, maquette en ligne pour valider, paiements convenus ensemble au moment du devis.</p>
-    </details>
-    <details>
-      <summary>Comment se passe le paiement ?</summary>
-      <p>50 % d'acompte pour démarrer, le solde à la livraison. Le moyen de paiement est convenu avec vous au moment du devis.</p>
-    </details>
+    <div class="grille">
+      <div class="carte" style="border-top:4px solid var(--or)">
+        <h3>Le single complet</h3>
+        <p>« Mami Watta » en entier — 3 minutes 07 — en fichier MP3, à garder pour toujours sur ton téléphone ou ton ordinateur.</p>
+      </div>
+      <div class="carte" style="border-top:4px solid var(--orange)">
+        <h3>Téléchargement direct</h3>
+        <p>Pas d'attente, pas d'abonnement : tu paies, tu télécharges. Le titre est à toi, immédiatement.</p>
+      </div>
+      <div class="carte" style="border-top:4px solid var(--or)">
+        <h3>Soutien direct à l'artiste</h3>
+        <p>Pas d'intermédiaire : ton achat arrive à l'artiste et finance directement la prochaine musique.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section--alt" id="commande">
+<section class="section--alt">
   <div class="container">
-    <span class="kicker">Passer commande</span>
-    <h2>Demandez votre maquette gratuite</h2>
-    <p class="sous">Deux minutes pour remplir ce formulaire — ou, si vous préférez, écrivez-moi directement sur WhatsApp au <a href="https://wa.me/24177915531" style="color:var(--or)">+241 77 91 55 31</a>.</p>
-    <form action="https://formsubmit.co/abaghaabessolo@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Nouvelle demande — site vitrine (landing)">
-      <input type="hidden" name="_next" value="https://juniorberger.github.io/site-vitrine/merci.html">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="_honey" style="display:none">
-      <div class="champ">
-        <label for="nom">Votre nom</label>
-        <input id="nom" name="Nom" type="text" required autocomplete="name">
+    <span class="kicker kicker--orange">Comment acheter</span>
+    <h2>Simple, en trois temps</h2>
+    <p class="sous"></p>
+    <div class="etapes">
+      <div class="etape"><span class="num">1</span><h3>Clique sur « Acheter »</h3><p>Tu arrives sur la page du single, dans la boutique officielle de Kayaman du Bled — le Shop du Bled.</p></div>
+      <div class="etape"><span class="num">2</span><h3>Paie en toute sécurité</h3><p>583 FCFA, via Chariow : Mobile Money, carte bancaire ou l'un des moyens proposés à la commande.</p></div>
+      <div class="etape"><span class="num">3</span><h3>Télécharge ton titre</h3><p>Le MP3 complet se télécharge aussitôt. Bonne écoute — et merci de soutenir l'artiste.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <span class="kicker">L'artiste</span>
+    <h2>Kayaman du Bled</h2>
+    <div class="artiste-bloc">
+      <img src="../images/kayaman-artiste.jpg" alt="Kayaman du Bled en tenue de scène — chapeau blanc et bretelles">
+      <div>
+        <p><strong>Artiste gabonais, musique consciente.</strong> Kayaman du Bled porte la voix du bled avec des textes qui parlent vrai — le quotidien, la fierté, la débrouille et l'espoir.</p>
+        <p>On lui doit notamment « Ône Mbeng » (avec Lilian Ndong Nguema), « FAYA », « ZA VALE ENING » (avec Rodzeng) et « Mental d'acier Engong Zock ». « Mami Watta » est son nouveau single.</p>
+        <p>Suis-le sur TikTok : <strong>@kayamandubledofficiel1</strong></p>
+        <div class="galerie" style="margin-top:20px">
+          <figure>
+            <img src="../images/kayaman-scene.jpg" alt="Kayaman du Bled sur scène, micro en main" loading="lazy">
+            <figcaption>Sur scène — l'énergie du live.</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/kayaman-guitare.jpg" alt="Kayaman du Bled, sa guitare à l'épaule" loading="lazy">
+            <figcaption>L'homme et sa guitare.</figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="champ">
-        <label for="entreprise">Nom de votre entreprise / établissement</label>
-        <input id="entreprise" name="Entreprise" type="text" required>
-      </div>
-      <div class="champ">
-        <label for="ville">Ville et pays</label>
-        <input id="ville" name="Ville" type="text" placeholder="Ex. : Abidjan, Côte d'Ivoire" required>
-      </div>
-      <div class="champ">
-        <label for="whatsapp">Votre numéro WhatsApp</label>
-        <input id="whatsapp" name="WhatsApp" type="tel" required autocomplete="tel">
-      </div>
-      <div class="champ">
-        <label for="type">Que souhaitez-vous ?</label>
-        <select id="type" name="Projet">
-          <option>La maquette gratuite d'abord</option>
-          <option>Une page unique (120 000 FCFA)</option>
-          <option>Un site vitrine complet</option>
-          <option>Un site + ma fiche Google optimisée</option>
-          <option>Je ne sais pas encore, conseillez-moi</option>
-        </select>
-      </div>
-      <div class="champ">
-        <label for="message">Quelques mots sur votre activité (optionnel)</label>
-        <textarea id="message" name="Message" rows="4"></textarea>
-      </div>
-      <button class="btn" type="submit" style="cursor:pointer">Envoyer ma demande</button>
-      <p class="micro">Sans engagement. Vos informations ne servent qu'à préparer votre maquette.</p>
-    </form>
+    </div>
+  </div>
+</section>
+
+<section class="section--alt bandeau-achat">
+  <div class="container">
+    <span class="kicker">À toi de jouer</span>
+    <h2>Prêt à écouter « Mami Watta » en entier ?</h2>
+    <div class="prix">583 FCFA</div>
+    <p class="sous" style="margin:0 auto 26px">Téléchargement immédiat. Chaque achat soutient directement l'artiste.</p>
+    <a class="btn" href="https://ikwyybfr.mychariow.online/prd_e8etl2qk">Acheter le single maintenant</a>
+    <p class="micro">Une question avant d'acheter ? Écris-nous sur WhatsApp : <a href="https://wa.me/24177915531" style="color:var(--or)">+241 77 91 55 31</a></p>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><a href="https://juniorberger.github.io/">Gaëtan Junior Abagha Abessolo</a> — Marketeur digital freelance, Libreville (Gabon) · <a href="https://wa.me/24177915531">WhatsApp +241 77 91 55 31</a></p>
+    <p>Shop du Bled — boutique officielle de Kayaman du Bled · « Mami Watta » © Kayaman du Bled, tous droits réservés · Vente et paiement sécurisés par <a href="https://ikwyybfr.mychariow.online">Chariow</a></p>
   </div>
 </footer>
 
