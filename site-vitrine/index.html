@@ -61,6 +61,9 @@ header .container{display:flex;justify-content:space-between;align-items:center}
 .micro{margin-top:16px;font-size:.9rem;color:var(--gris)}
 section{padding:60px 0}
 .section--alt{background:var(--fond-2)}
+.bloc-motifs{position:relative;background:var(--fond)}
+.bloc-motifs::before{content:"";position:absolute;inset:0;background:url('../images/motifs-africains.webp') repeat;background-size:500px auto;opacity:.32;pointer-events:none}
+.bloc-motifs>section{position:relative;z-index:1;background:transparent}
 h2{font-size:clamp(1.6rem,3.8vw,2.3rem);margin-bottom:14px;color:var(--creme)}
 .sous{color:var(--gris);max-width:660px;margin-bottom:34px}
 .lecteur{background:var(--fond);border:1px solid var(--bord);border-radius:var(--rayon);padding:26px;max-width:640px}
@@ -128,6 +131,7 @@ footer a{color:var(--or);text-decoration:none}
   </div>
 </div>
 
+<div class="bloc-motifs">
 <section class="section--alt" id="ecouter">
   <div class="container">
     <span class="kicker kicker--orange">Écoute</span>
@@ -200,6 +204,7 @@ footer a{color:var(--or);text-decoration:none}
     </div>
   </div>
 </section>
+</div>
 
 <section class="section--alt bandeau-achat">
   <div class="container">
