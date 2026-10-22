@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://juniorberger.github.io/images/mami-watta-cover.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--fond:#160B04;--fond-2:#221106;--orange:#E8641B;--or:#F7B500;--or-clair:#FFC933;--creme:#FFF3E0;--texte:#F7E9D2;--gris:#C9A97E;--bord:rgba(247,181,0,.25);--rayon:16px;--font-titre:'Bricolage Grotesque',system-ui,sans-serif;--font-texte:'Inter',system-ui,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -31,7 +31,13 @@ header .container{display:flex;justify-content:space-between;align-items:center}
 .logo span{color:var(--orange)}
 .hero{padding:64px 0 56px;text-align:center;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(232,100,27,.28),transparent 70%)}
 .hero .pochette{width:min(400px,84vw);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 0 3px rgba(247,181,0,.35);margin:0 auto 30px}
-.hero h1{font-size:clamp(2.6rem,8vw,4.4rem);font-weight:800;color:var(--or);text-transform:uppercase;letter-spacing:.01em;margin-bottom:6px}
+.hero h1{font-family:'Anton',sans-serif;font-size:clamp(2.6rem,8vw,4.4rem);font-weight:400;color:var(--or);text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.marquee{display:block;overflow:hidden;white-space:nowrap;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee-track{display:inline-flex;width:max-content;animation:deroule 20s linear infinite;will-change:transform}
+.marquee-track span{padding-right:.35em}
+@keyframes deroule{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
 .hero .artiste{font-family:var(--font-titre);font-size:clamp(1.15rem,3vw,1.5rem);font-weight:700;color:var(--creme);margin-bottom:18px}
 .hero p{color:var(--gris);font-size:1.1rem;max-width:660px;margin:0 auto 28px}
 .prix-hero{font-family:var(--font-titre);font-size:1.7rem;font-weight:800;color:var(--creme);margin-bottom:20px}
@@ -85,7 +91,7 @@ footer a{color:var(--or);text-decoration:none}
   <div class="container">
     <span class="kicker">Nouveau single — Kayaman du Bled</span>
     <img class="pochette" src="../images/mami-watta-cover.jpg" alt="Pochette du single Mami Watta de Kayaman du Bled">
-    <h1>Mami Watta</h1>
+    <h1><span class="sr-only">Mami Watta</span><span class="marquee" aria-hidden="true"><span class="marquee-track"><span>Mami Watta ✦ Mami Watta ✦ Mami Watta ✦ Mami Watta ✦&nbsp;</span><span>Mami Watta ✦ Mami Watta ✦ Mami Watta ✦ Mami Watta ✦&nbsp;</span></span></span></h1>
     <p class="artiste">Kayaman du Bled</p>
     <p>« Mami Watta », le nouveau single de Kayaman du Bled, en téléchargement direct sur sa boutique officielle, le Shop du Bled. Chaque achat soutient directement l'artiste — pas d'intermédiaire : ton soutien finance la prochaine musique.</p>
     <div class="prix-hero">583 FCFA<small>Téléchargement immédiat après paiement — le titre complet, en MP3</small></div>
