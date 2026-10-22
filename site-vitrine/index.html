@@ -36,10 +36,10 @@ header .container{display:flex;justify-content:space-between;align-items:center}
 .hero-voile{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(22,11,4,.34) 0%,rgba(22,11,4,.08) 34%,rgba(22,11,4,.16) 62%,rgba(22,11,4,.88) 100%)}
 .hero-inner{position:relative;z-index:2}
 .hero-grille{display:block;margin-top:10px}
-.hero-contenu{max-width:600px;margin-left:auto}
+.hero-contenu{max-width:660px;margin:0 auto}
 .hero-femme{width:100%;max-height:76vh;object-fit:contain;object-position:bottom center;align-self:end;filter:drop-shadow(0 16px 20px rgba(0,0,0,.5));animation:entree-gauche 1.1s cubic-bezier(.22,.8,.3,1) both .15s,flotte 7s ease-in-out 1.4s infinite}
-.hero-contenu{text-align:left;padding:10px 0 54px}
-.hero .pochette{width:min(215px,52vw);border-radius:14px;box-shadow:0 20px 46px rgba(0,0,0,.6),0 0 0 3px rgba(247,181,0,.35);margin:0 0 20px}
+.hero-contenu{text-align:center;padding:10px 0 54px}
+.hero .pochette{width:min(430px,84vw);border-radius:18px;box-shadow:0 20px 46px rgba(0,0,0,.6),0 0 0 3px rgba(247,181,0,.35);margin:0 auto 24px}
 .anim{animation:apparait .9s cubic-bezier(.22,.8,.3,1) both}
 @keyframes apparait{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
 @keyframes entree-gauche{from{opacity:0;transform:translateX(-42px)}to{opacity:1;transform:translateX(0)}}
@@ -53,11 +53,11 @@ header .container{display:flex;justify-content:space-between;align-items:center}
 @keyframes deroule{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
 .hero .artiste{font-family:var(--font-titre);font-size:clamp(1.15rem,3vw,1.5rem);font-weight:700;color:var(--creme);margin-bottom:14px}
-.hero p{color:#E8D3AC;font-size:1.1rem;max-width:560px;margin:0 0 24px;text-shadow:0 2px 14px rgba(22,11,4,.65)}
+.hero p{color:#E8D3AC;font-size:1.1rem;max-width:560px;margin:0 auto 24px;text-shadow:0 2px 14px rgba(22,11,4,.65)}
 .prix-hero{font-family:var(--font-titre);font-size:1.7rem;font-weight:800;color:var(--creme);margin-bottom:20px}
 .prix-hero small{display:block;font-family:var(--font-texte);font-weight:500;font-size:.9rem;color:var(--gris)}
 .cta-ligne{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.hero-contenu .cta-ligne{justify-content:flex-start}
+.hero-contenu .cta-ligne{justify-content:center}
 .micro{margin-top:16px;font-size:.9rem;color:var(--gris)}
 section{padding:60px 0}
 .section--alt{background:var(--fond-2)}
