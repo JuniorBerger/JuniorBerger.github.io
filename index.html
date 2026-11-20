@@ -25,7 +25,7 @@
 <meta name="twitter:image" content="https://juniorberger.github.io/images/portrait.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Recoleta:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Recoleta:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -35,9 +35,9 @@
   <div class="container">
     <a href="#accueil" class="logo">GA<span>.</span></a>
     <nav class="nav" id="nav">
-      <a href="#parcours">Parcours</a>
+      <a href="#realisations">Projets</a>
       <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
+      <a href="#parcours">Parcours</a>
       <a href="#contact">Contact</a>
       <a href="#english">EN</a>
     </nav>
@@ -50,61 +50,189 @@
 
 <main>
 <section class="hero" id="accueil">
-  <div class="container hero-grille">
-    <div class="hero-texte">
-      <span class="kicker">Libreville, Gabon — Freelance</span>
-      <h1>Gaëtan Junior<br>Abagha Abessolo</h1>
-      <p class="hero-titre">AI-Powered Digital Marketer</p>
-      <p class="hero-promesse">« Rendre visible ce qui mérite d'être vu. »</p>
-      <p class="hero-desc">Fondateur de <strong>WEHEM Digital Agency</strong>, j'aide les PME et les freelances
-      d'Afrique francophone à transformer leur présence en ligne en clients :
-      référencement local, sites vitrines qui convertissent, contenu augmenté par l'IA.</p>
-      <div class="hero-cta">
-        <a class="btn btn--or" href="https://wa.me/24107915531" target="_blank" rel="noopener">Travaillons ensemble</a>
-        <a class="btn btn--ghost-light" href="#realisations">Voir mes réalisations</a>
-      </div>
-      <div class="hero-badges">
-        <span>🇫🇷 Français</span><span>🇬🇧 Anglais écrit</span><span>⚡ Réponse sous 24 h</span>
-      </div>
+  <div class="hero-mot" aria-hidden="true">PORTFOLIO</div>
+  <div class="container">
+    <div class="hero-top reveal">
+      <span>AI-Powered Digital Marketer<br>Créateur de contenu augmenté par l'IA</span>
+      <span class="hero-top-dispo">Disponible pour des projets <span class="plus">+</span></span>
     </div>
-    <div class="hero-photo reveal">
-      <img src="images/portrait.webp" alt="Gaëtan Junior Abagha Abessolo" fetchpriority="high">
+    <div class="hero-grille">
+      <div class="hero-texte">
+        <p class="hero-script">Bonjour, je suis</p>
+        <h1>Gaëtan Junior<br>Abagha Abessolo</h1>
+        <p class="hero-titre">AI-Powered Digital Marketer</p>
+        <p class="hero-desc">Fondateur de <strong>WEHEM Digital Agency</strong>, j'aide les PME et les freelances
+        d'Afrique francophone à transformer leur présence en ligne en clients :
+        référencement local, sites vitrines qui convertissent, contenu augmenté par l'IA.</p>
+        <p class="hero-lieu">◎ Basé à Libreville, Gabon</p>
+        <div class="hero-cta">
+          <a class="btn btn--or" href="https://wa.me/24107915531" target="_blank" rel="noopener">Travaillons ensemble</a>
+          <a class="btn btn--ghost-light" href="#realisations">Voir mes projets</a>
+        </div>
+        <div class="hero-badges">
+          <span>🇫🇷 Français</span><span>🇬🇧 Anglais écrit</span><span>⚡ Réponse sous 24 h</span>
+        </div>
+      </div>
+      <div class="hero-droite reveal">
+        <div class="hero-photo">
+          <img src="images/portrait.webp" alt="Gaëtan Junior Abagha Abessolo" fetchpriority="high">
+        </div>
+        <ul class="hero-atouts">
+          <li><span class="plus">+</span><span><strong>Référencement local</strong><br>Être trouvé sur Google, là où les clients cherchent.</span></li>
+          <li><span class="plus">+</span><span><strong>Sites qui convertissent</strong><br>Des visiteurs transformés en demandes de devis.</span></li>
+          <li><span class="plus">+</span><span><strong>Contenu &amp; IA</strong><br>Du contenu régulier, piloté avec méthode.</span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-
-<section class="section section--alt" id="english">
+<section class="section" id="realisations">
   <div class="container">
-    <span class="kicker reveal">In English</span>
-    <h2 class="titre-section reveal">AI-Powered Digital Marketer for global clients</h2>
-    <p class="sous-titre reveal">I help SMEs and freelancers turn their online presence into clients: local SEO, high-converting showcase websites, and AI-powered content. Founder of <strong>WEHEM Digital Agency</strong> &mdash; a practitioner, not a theorist.</p>
+    <div class="section-head reveal">
+      <div>
+        <span class="kicker">Projets sélectionnés</span>
+        <h2 class="titre-section">Du concret, pas des promesses</h2>
+      </div>
+      <p class="section-head-note">Une sélection de travaux réels,<br>livrés et en ligne.</p>
+    </div>
+    <div class="grille-projets">
+      <a class="projet reveal" href="https://wehem-agency.github.io/" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/service-sites-vitrines.webp" loading="lazy" decoding="async" alt="Site vitrine élégant affiché sur un ordinateur portable">
+        <h3>Site WEHEM Digital Agency</h3>
+        <p class="projet-cat">Site vitrine : 6 services, blog SEO, formulaire de contact</p>
+        <span class="projet-num">01 <span class="fleche">→</span></span>
+      </a>
+      <a class="projet reveal" href="https://wehem-digital-agency.github.io/demo-ebene-immobilier/" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/tunnel-hotelier.webp" loading="lazy" decoding="async" alt="Bâtiment d'une agence immobilière">
+        <h3>Maquette, agence immobilière</h3>
+        <p class="projet-cat">Maquette démo : catalogue filtrable, fiches biens, WhatsApp</p>
+        <span class="projet-num">02 <span class="fleche">→</span></span>
+      </a>
+      <a class="projet reveal" href="https://wehem-digital-agency.github.io/demo-eclat-ivoire/" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/tunnel-commercante.webp" loading="lazy" decoding="async" alt="Commerçante dans son institut">
+        <h3>Maquette, institut de beauté</h3>
+        <p class="projet-cat">Maquette démo : prestations, réservation en ligne avec créneaux</p>
+        <span class="projet-num">03 <span class="fleche">→</span></span>
+      </a>
+      <a class="projet reveal" href="https://app.notion.com/p/3f47427028e781109626d03c3f8666cd" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/service-audit-strategie.webp" loading="lazy" decoding="async" alt="Analyse de tableaux de bord et rapports pour un audit digital">
+        <h3>Guide « Diagnostic Express »</h3>
+        <p class="projet-cat">Contenu : lead magnet de 10 pages, auditer sa présence en 30 minutes</p>
+        <span class="projet-num">04 <span class="fleche">→</span></span>
+      </a>
+      <a class="projet reveal" href="https://app.notion.com/p/3f47427028e781269b32f38be86abf69" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/service-contenu-ia.webp" loading="lazy" decoding="async" alt="Créatrice de contenu préparant son calendrier éditorial">
+        <h3>Calendriers de contenu 30 jours</h3>
+        <p class="projet-cat">Contenu : trois calendriers éditoriaux complets, textes et visuels</p>
+        <span class="projet-num">05 <span class="fleche">→</span></span>
+      </a>
+      <a class="projet reveal" href="https://ikwyybfr.mychariow.online" target="_blank" rel="noopener">
+        <img class="projet-img" src="images/mami-watta-cover.jpg" loading="lazy" decoding="async" alt="Pochette du single Mami Watta de Kayaman du Bled">
+        <h3>Boutiques en ligne Chariow</h3>
+        <p class="projet-cat">E-commerce : création et configuration de boutiques de produits digitaux</p>
+        <span class="projet-num">06 <span class="fleche">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="services">
+  <div class="container">
+    <span class="kicker reveal">Services freelance</span>
+    <h2 class="titre-section reveal">Ce que je fais pour vous</h2>
+    <p class="sous-titre reveal">Des prestations concrètes, au service d'un seul objectif : des clients.</p>
     <div class="grille-services">
       <div class="service reveal">
-        <h3>Local SEO &amp; Google Business Profile</h3>
-        <p>Get found when customers search near them: optimized listing, reviews, Maps presence.</p>
+        <img class="service-img" src="images/service-referencement-local.webp" loading="lazy" decoding="async" alt="Fiche Google Business d'un commerce affichée sur smartphone">
+        <h3>Référencement local &amp; Fiche Google</h3>
+        <p>Être trouvé quand un client cherche près de chez lui : fiche Google Business optimisée, avis clients, présence sur Maps.</p>
       </div>
       <div class="service reveal">
-        <h3>Showcase websites that convert</h3>
-        <p>Fast, beautiful sites built to turn visitors into quote requests.</p>
+        <img class="service-img" src="images/service-sites-vitrines.webp" loading="lazy" decoding="async" alt="Site vitrine élégant affiché sur un ordinateur portable">
+        <h3>Sites vitrines qui convertissent</h3>
+        <p>Des sites rapides, beaux et pensés pour transformer les visiteurs en demandes de devis. Exemples ci-dessus.</p>
+        <p style="margin-top:8px"><a href="site-vitrine/" style="color:var(--or);font-weight:600;text-decoration:none">Découvrir « Mami Watta », le single de Kayaman du Bled →</a></p>
       </div>
       <div class="service reveal">
-        <h3>Content &amp; AI</h3>
-        <p>Editorial calendars, SEO copy, visuals &mdash; consistent content powered by well-driven AI.</p>
+        <img class="service-img" src="images/service-contenu-ia.webp" loading="lazy" decoding="async" alt="Créatrice de contenu préparant son calendrier éditorial">
+        <h3>Contenu &amp; IA</h3>
+        <p>Calendriers éditoriaux, textes optimisés SEO, visuels : du contenu régulier sans y passer vos journées, grâce à l'IA bien pilotée.</p>
       </div>
       <div class="service reveal">
-        <h3>Digital audit &amp; strategy</h3>
-        <p>An honest diagnosis of your online presence and a prioritized action plan.</p>
+        <img class="service-img" src="images/service-audit-strategie.webp" loading="lazy" decoding="async" alt="Analyse de tableaux de bord et rapports pour un audit digital">
+        <h3>Audit &amp; Stratégie digitale</h3>
+        <p>Un diagnostic honnête de votre présence en ligne et un plan d'action priorisé : ce qui rapporte d'abord.</p>
       </div>
     </div>
-    <div class="centre reveal" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn--or" href="https://wa.me/24107915531" target="_blank" rel="noopener">Let&apos;s discuss your project</a>
-      <a class="btn btn--ghost-light" href="https://www.upwork.com/freelancers/~0172870caa1b74c780" target="_blank" rel="noopener">Hire me on Upwork &mdash; $20/h</a>
+    <div class="centre reveal">
+      <a class="btn btn--or" href="https://www.upwork.com/freelancers/~0172870caa1b74c780" target="_blank" rel="noopener">Mon profil Upwork — 20 $/h</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="parcours">
+<section class="section" id="competences">
+  <div class="container">
+    <div class="bandeau">
+      <div class="bandeau-col reveal">
+        <span class="kicker">Formations &amp; compétences</span>
+        <h3 class="bandeau-titre">Formations</h3>
+        <div class="formation-ligne">
+          <p><strong>Certificats Google, Marketing digital &amp; e-commerce</strong><br>Coursera, parcours AMJA</p>
+          <span class="formation-date">2026</span>
+        </div>
+        <div class="formation-ligne">
+          <p><strong>IA appliquée &amp; création d'agents IA</strong><br>Studia Academy, Libreville</p>
+          <span class="formation-date">2026</span>
+        </div>
+        <div class="formation-ligne">
+          <p><strong>Marketing digital &amp; référencement naturel (SEO)</strong><br>École 241, Libreville</p>
+          <span class="formation-date">2026</span>
+        </div>
+        <p class="bandeau-lien"><a href="#parcours">Voir le parcours détaillé →</a></p>
+        <h3 class="bandeau-titre" style="margin-top:30px">Compétences</h3>
+        <div class="tags">
+          <span>SEO local</span><span>Fiche Google Business</span><span>Sites vitrines</span>
+          <span>Contenu &amp; IA</span><span>Calendriers éditoriaux</span><span>Prospection B2B</span>
+          <span>Chatbots &amp; agents IA</span><span>Audit &amp; stratégie</span><span>E-commerce</span>
+          <span>LinkedIn &amp; réseaux sociaux</span>
+        </div>
+      </div>
+      <div class="bandeau-col reveal">
+        <span class="kicker">Ma méthode</span>
+        <h3 class="bandeau-titre">Simple, directe, sans jargon</h3>
+        <div class="methode">
+          <div class="methode-etape">
+            <span class="methode-num">1</span>
+            <div><h4>Diagnostic</h4><p>On regarde ce qui existe, ce qui manque et ce qui bloque.</p></div>
+          </div>
+          <div class="methode-etape">
+            <span class="methode-num">2</span>
+            <div><h4>Plan d'action</h4><p>Un plan clair et priorisé : ce qui rapporte d'abord, dans quel ordre.</p></div>
+          </div>
+          <div class="methode-etape">
+            <span class="methode-num">3</span>
+            <div><h4>Construction</h4><p>Je construis, vous validez à chaque étape. Vous voyez le résultat avant qu'il soit en ligne.</p></div>
+          </div>
+          <div class="methode-etape">
+            <span class="methode-num">4</span>
+            <div><h4>Suivi</h4><p>Après la livraison, je reste disponible, et je vous montre comment entretenir l'ensemble.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="bandeau-citation reveal">
+        <span class="citation-guillemet">«</span>
+        <p class="citation-texte">Rendre visible ce qui mérite d'être vu.</p>
+        <p class="citation-signature">Gaëtan</p>
+        <p class="citation-role">Fondateur, WEHEM Digital Agency</p>
+        <p class="citation-cta">Créons ensemble quelque chose qui compte.</p>
+        <a class="btn btn--sombre" href="https://wa.me/24107915531" target="_blank" rel="noopener">Démarrer un projet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="parcours">
   <div class="container">
     <span class="kicker reveal">Mon parcours</span>
     <h2 class="titre-section reveal">Un praticien, pas un théoricien</h2>
@@ -167,116 +295,48 @@
       <div class="etape reveal">
         <span class="etape-date">Fondations</span>
         <h3>Formation agricole — IGAD</h3>
-        <p>Ma première formation : l'agriculture. Elle m'a appris la patience, la rigueur et le goût du travail bien fait —
+        <p>Ma première formation : l'agriculture. Elle m'a appris la patience, la rigueur et le goût du travail bien fait,
         des qualités que j'applique chaque jour au digital.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--alt" id="services">
+<section class="section" id="english">
   <div class="container">
-    <span class="kicker reveal">Services freelance</span>
-    <h2 class="titre-section reveal">Ce que je fais pour vous</h2>
-    <p class="sous-titre reveal">Des prestations concrètes, au service d'un seul objectif : des clients.</p>
+    <span class="kicker reveal">In English</span>
+    <h2 class="titre-section reveal">AI-Powered Digital Marketer for global clients</h2>
+    <p class="sous-titre reveal">I help SMEs and freelancers turn their online presence into clients: local SEO, high-converting showcase websites, and AI-powered content. Founder of <strong>WEHEM Digital Agency</strong>, a practitioner, not a theorist.</p>
     <div class="grille-services">
       <div class="service reveal">
-        <img class="service-img" src="images/service-referencement-local.webp" loading="lazy" decoding="async" alt="Fiche Google Business d'un commerce affichée sur smartphone">
-        <h3>Référencement local &amp; Fiche Google</h3>
-        <p>Être trouvé quand un client cherche près de chez lui : fiche Google Business optimisée, avis clients, présence sur Maps.</p>
+        <h3>Local SEO &amp; Google Business Profile</h3>
+        <p>Get found when customers search near them: optimized listing, reviews, Maps presence.</p>
       </div>
       <div class="service reveal">
-        <img class="service-img" src="images/service-sites-vitrines.webp" loading="lazy" decoding="async" alt="Site vitrine élégant affiché sur un ordinateur portable">
-        <h3>Sites vitrines qui convertissent</h3>
-        <p>Des sites rapides, beaux et pensés pour transformer les visiteurs en demandes de devis. Exemples ci-dessous.</p>
-        <p style="margin-top:8px"><a href="site-vitrine/" style="color:var(--or);font-weight:600;text-decoration:none">Découvrir « Mami Watta », le single de Kayaman du Bled →</a>a></p>p>
+        <h3>Showcase websites that convert</h3>
+        <p>Fast, beautiful sites built to turn visitors into quote requests.</p>
       </div>
       <div class="service reveal">
-        <img class="service-img" src="images/service-contenu-ia.webp" loading="lazy" decoding="async" alt="Créatrice de contenu préparant son calendrier éditorial">
-        <h3>Contenu &amp; IA</h3>
-        <p>Calendriers éditoriaux, textes optimisés SEO, visuels : du contenu régulier sans y passer vos journées, grâce à l'IA bien pilotée.</p>
+        <h3>Content &amp; AI</h3>
+        <p>Editorial calendars, SEO copy, visuals: consistent content powered by well-driven AI.</p>
       </div>
       <div class="service reveal">
-        <img class="service-img" src="images/service-audit-strategie.webp" loading="lazy" decoding="async" alt="Analyse de tableaux de bord et rapports pour un audit digital">
-        <h3>Audit &amp; Stratégie digitale</h3>
-        <p>Un diagnostic honnête de votre présence en ligne et un plan d'action priorisé : ce qui rapporte d'abord.</p>
+        <h3>Digital audit &amp; strategy</h3>
+        <p>An honest diagnosis of your online presence and a prioritized action plan.</p>
       </div>
     </div>
-    <div class="centre reveal">
-      <a class="btn btn--or" href="https://www.upwork.com/freelancers/~0172870caa1b74c780" target="_blank" rel="noopener">Mon profil Upwork — 20 $/h</a>
+    <div class="centre reveal" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn--or" href="https://wa.me/24107915531" target="_blank" rel="noopener">Let&apos;s discuss your project</a>
+      <a class="btn btn--ghost-light" href="https://www.upwork.com/freelancers/~0172870caa1b74c780" target="_blank" rel="noopener">Hire me on Upwork, $20/h</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="realisations">
-  <div class="container">
-    <span class="kicker reveal">Réalisations</span>
-    <h2 class="titre-section reveal">Du concret, pas des promesses</h2>
-    <p class="sous-titre reveal">Une sélection de travaux réels, livrés et en ligne.</p>
-    <div class="grille-reas">
-      <a class="rea reveal" href="https://wehem-agency.github.io/" target="_blank" rel="noopener">
-        <h3>Site WEHEM Digital Agency</h3>
-        <p>Site vitrine de mon agence : 6 services, blog SEO, formulaire de contact.</p>
-        <span class="rea-tag">Site vitrine</span>
-      </a>
-      <a class="rea reveal" href="https://wehem-digital-agency.github.io/demo-ebene-immobilier/" target="_blank" rel="noopener">
-        <h3>Maquette — Agence immobilière</h3>
-        <p>Site démo : catalogue filtrable, fiches biens, contact WhatsApp.</p>
-        <span class="rea-tag">Maquette démo</span>
-      </a>
-      <a class="rea reveal" href="https://wehem-digital-agency.github.io/demo-eclat-ivoire/" target="_blank" rel="noopener">
-        <h3>Maquette — Institut de beauté</h3>
-        <p>Site démo : prestations, réservation en ligne avec créneaux.</p>
-        <span class="rea-tag">Maquette démo</span>
-      </a>
-      <a class="rea reveal" href="https://app.notion.com/p/3f47427028e781109626d03c3f8666cd" target="_blank" rel="noopener">
-        <h3>Guide « Diagnostic Express »</h3>
-        <p>Lead magnet de 10 pages : auditer sa présence en ligne en 30 minutes.</p>
-        <span class="rea-tag">Contenu</span>
-      </a>
-      <a class="rea reveal" href="https://app.notion.com/p/3f47427028e781269b32f38be86abf69" target="_blank" rel="noopener">
-        <h3>Calendriers de contenu 30 jours</h3>
-        <p>Trois calendriers éditoriaux complets (LinkedIn, Facebook) : textes + visuels.</p>
-        <span class="rea-tag">Contenu</span>
-      </a>
-      <a class="rea reveal" href="https://ikwyybfr.mychariow.online" target="_blank" rel="noopener">
-        <h3>Boutiques en ligne Chariow</h3>
-        <p>Création et configuration de boutiques e-commerce (produits digitaux).</p>
-        <span class="rea-tag">E-commerce</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt">
-  <div class="container">
-    <span class="kicker reveal">Ma méthode</span>
-    <h2 class="titre-section reveal">Simple, directe, sans jargon</h2>
-    <div class="grille-services grille-3">
-      <div class="service reveal">
-        <div class="service-icone">1</div>
-        <h3>Diagnostic</h3>
-        <p>On regarde ce qui existe, ce qui manque et ce qui bloque. Vous repartez avec un plan clair, même si on ne travaille pas ensemble.</p>
-      </div>
-      <div class="service reveal">
-        <div class="service-icone">2</div>
-        <h3>Construction</h3>
-        <p>Je construis, vous validez à chaque étape. Pas de surprise : vous voyez le résultat avant qu'il soit en ligne.</p>
-      </div>
-      <div class="service reveal">
-        <div class="service-icone">3</div>
-        <h3>Suivi</h3>
-        <p>Après la livraison, je reste disponible. Un site ou une stratégie, ça s'entretient — je vous montre comment.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="contact">
+<section class="section section--alt" id="contact">
   <div class="container">
     <span class="kicker reveal">Contact</span>
-    <h2 class="titre-section reveal">Discutons de votre projet</h2>
-    <p class="sous-titre reveal">Premier échange sans engagement : dites-moi où vous en êtes, je vous dis ce que je peux faire.</p>
+    <h2 class="titre-section titre-contact reveal">Travaillons<br>ensemble</h2>
+    <p class="sous-titre reveal">Premier échange sans engagement : dites-moi où vous en êtes, je vous dis ce que je peux faire. <span class="dispo-pill">● Disponible pour des missions freelance</span></p>
     <div class="contact-grille">
       <form class="formulaire reveal" id="form-contact" action="https://formsubmit.co/ajax/abaghaabessolo@gmail.com" method="POST">
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
@@ -303,6 +363,7 @@
           <h3>Coordonnées directes</h3>
           <p>📞 <a href="tel:+24177915531">+241 77 91 55 31</a></p>
           <p>💬 <a href="https://wa.me/24107915531" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p>✉️ <a href="mailto:abaghaabessolo@gmail.com">abaghaabessolo@gmail.com</a></p>
           <p>💼 <a href="https://www.linkedin.com/in/ga%C3%ABtan-junior-abagha-abessolo-7a0b511a5" target="_blank" rel="noopener">LinkedIn</a></p>
           <p>🌐 <a href="https://www.upwork.com/freelancers/~0172870caa1b74c780" target="_blank" rel="noopener">Upwork</a></p>
           <p>📍 Libreville, Gabon</p>
