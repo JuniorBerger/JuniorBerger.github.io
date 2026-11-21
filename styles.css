@@ -140,6 +140,7 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .etape-logo--amja{width:300px}
 .etape-logo--studia{height:150px;width:auto}
 .etape-certificat{display:block;width:520px;max-width:100%;height:auto;border:1px solid var(--bord);border-radius:8px}
+.etape-certificat--portrait{width:400px}
 .etape h3{font-size:1.2rem;margin-bottom:8px}
 .etape p{color:var(--gris);font-size:.95rem;max-width:640px}
 
