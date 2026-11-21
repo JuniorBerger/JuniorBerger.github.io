@@ -115,7 +115,11 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
   display:flex;align-items:center;justify-content:center;font-family:var(--font-titre);font-size:1.1rem;font-weight:700}
 .methode-etape h4{font-family:var(--font-titre);color:var(--creme);font-size:1.05rem;margin-bottom:3px}
 .methode-etape p{font-size:.9rem;color:var(--gris)}
-.bandeau-citation{background:var(--or);border-radius:var(--rayon);padding:36px 30px;color:#141414;display:flex;flex-direction:column}
+.bandeau-citation{background:var(--or);border-radius:var(--rayon);padding:36px 30px;color:#141414;display:flex;flex-direction:column;position:relative;overflow:hidden;min-height:500px}
+.bandeau-citation>*{position:relative;z-index:1}
+.citation-texte,.citation-role,.citation-cta{max-width:62%}
+.citation-photo{position:absolute;right:4px;bottom:0;height:84%;width:auto;z-index:0;filter:drop-shadow(-14px 16px 12px rgba(0,0,0,.45))}
+.bandeau-citation::after{content:"";position:absolute;right:26px;bottom:8px;width:190px;height:30px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,0,0,.42),transparent 68%);z-index:0}
 .citation-guillemet{font-family:var(--font-titre);font-size:3.4rem;line-height:.6;font-weight:700}
 .citation-texte{font-family:var(--font-titre);font-size:1.45rem;line-height:1.35;margin:18px 0 8px;color:#141414}
 .citation-signature{font-family:var(--font-script);font-size:2.3rem;line-height:1.1}
@@ -212,6 +216,8 @@ footer{border-top:1px solid var(--bord);padding:10px 0 26px;position:relative;z-
   .infos-grid,.form-ligne{grid-template-columns:1fr}
   .cta-band{grid-template-columns:1fr}
   .cta-band-photo{min-height:280px;order:-1}
+  .bandeau-citation{min-height:440px}
+  .citation-photo{height:72%}
   .section{padding:64px 0}
   .section-head-note{text-align:left}
   .hero{padding-top:104px}
