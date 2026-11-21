@@ -160,9 +160,10 @@ h1,h2,h3{font-family:var(--font-titre);line-height:1.2;color:var(--creme)}
 .info-item a{color:var(--or-clair)}
 .info-item a:hover{color:var(--or)}
 .suivez-titre{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:700;color:var(--creme);margin-bottom:12px}
-.suivez-liens{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:26px}
-.suivez-liens a{color:var(--or);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.suivez-liens a:hover{color:var(--or-clair)}
+.suivez-liens{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.suivez-btn{display:flex;align-items:center;justify-content:center;width:60px;height:60px;border:1px solid var(--bord);border-radius:14px;background:rgba(255,255,255,.04);transition:.25s}
+.suivez-btn:hover{border-color:var(--or);transform:translateY(-3px);box-shadow:var(--ombre)}
+.suivez-btn img{height:36px;width:auto;max-width:44px;object-fit:contain}
 .dispo-ligne{color:var(--or);font-size:.9rem;font-weight:600}
 .contact-form-note{color:var(--gris);font-size:.92rem;margin-bottom:8px}
 .formulaire label{display:block;font-size:.78rem;font-weight:700;margin:16px 0 7px;color:var(--texte);text-transform:uppercase;letter-spacing:.12em}
