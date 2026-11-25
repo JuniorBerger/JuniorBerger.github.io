@@ -235,3 +235,13 @@ footer{border-top:1px solid var(--bord);padding:10px 0 26px;position:relative;z-
   *,*::before,*::after{transition:none!important;animation:none!important}
   .reveal{opacity:1!important;transform:none!important}
 }
+
+/* Tarifs des services (migration WEHEM, nov. 2026) */
+.service .prix{list-style:none;margin-top:16px}
+.service .prix li{font-size:.88rem;color:var(--gris);border-top:1px solid var(--bord);padding:9px 0}
+.service .prix li:last-child{border-bottom:1px solid var(--bord)}
+.service .prix strong{color:var(--or);font-weight:600}
+.pack-lancement{margin-top:28px;border:1px solid var(--or);border-radius:var(--rayon);padding:26px 28px;background:rgba(245,197,24,.06)}
+.pack-lancement h3{margin-bottom:8px}
+.pack-lancement p{color:var(--gris);font-size:.95rem}
+.tarifs-note{margin-top:22px;color:var(--gris);font-size:.92rem;line-height:1.6}
